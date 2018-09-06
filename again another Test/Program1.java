@@ -12,4 +12,10 @@ public class Program1
         System.out.println("Hello Git");
         return x;
     }
+    
+    public int junk2(int x)
+    {
+        System.out.println("Hello Git");
+        return 5;
+    }
 }
