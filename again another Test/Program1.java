@@ -6,4 +6,10 @@ public class Program1
         System.out.println("Sup");
         
     }
+    
+    public int junk(int x)
+    {
+        System.out.println("Hello Git");
+        return x;
+    }
 }
