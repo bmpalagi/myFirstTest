@@ -13,7 +13,7 @@ public class treeSetAllWords
         TreeSet<String> words = new TreeSet<>();
         Scanner in = new Scanner(new File("speech.txt"));
         
-        in.useDelimiter("[^a-zA-z]");
+        in.useDelimiter("[^a-zA-Z]");
         while(in.hasNext())
         {
             words.add(in.next().toLowerCase());
