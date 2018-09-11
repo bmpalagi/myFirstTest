@@ -1,3 +1,6 @@
+//Brad Palagi
+//Parking on Drive Way
+
 import java.util.*;
 
 public class parking
@@ -56,13 +59,20 @@ public class parking
                         street.push(x);
                         System.out.println("Driveway: " + driveWay);
                         System.out.println("Street" + street);
-                            
-                        
                         
                     }
                     else 
                     {
                         System.out.println("No car on the driveway has that license plate");
+                        driveWay.push(x);
+                        while (!street.empty())
+                        {
+                            driveWay.push(street.pop());
+                            System.out.println("Driveway: " + driveWay);
+                            System.out.println("Street" + street);
+                            
+                        }
+                        break;
                     }
                 }
                
