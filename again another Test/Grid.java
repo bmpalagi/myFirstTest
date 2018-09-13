@@ -25,7 +25,8 @@ public class Grid
         
         //Creates initial Pair
         Pair start = new Pair(row,collumn,1);
-        
+                
+        pixels[row][collumn] = 1;
         
         //Sets current value at 1
         int currentValue = 2;
@@ -42,24 +43,28 @@ public class Grid
             if (x.getRow()>0 && pixels[x.getRow() -1][x.getCollumn()] == 0)
             {
                 stack.push(new Pair(x.getRow() -1,x.getCollumn(),currentValue));
+                pixels[x.getRow() -1][x.getCollumn()] = currentValue;
                 currentValue++;
             }
             
             if (x.getCollumn()<9 && pixels[x.getRow()][x.getCollumn()+1] == 0)
             {
                 stack.push(new Pair(x.getRow(),x.getCollumn()+1,currentValue));
+                pixels[x.getRow()][x.getCollumn()+1] = currentValue;
                 currentValue++;
             }
             
             if (x.getRow()<9 && pixels[x.getRow() +1][x.getCollumn()] == 0)
             {
                 stack.push(new Pair(x.getRow() +1,x.getCollumn(),currentValue));
+                pixels[x.getRow() +1][x.getCollumn()] = currentValue;
                 currentValue++;
             }
             
             if (x.getCollumn()>0 && pixels[x.getRow()][x.getCollumn()-1] == 0)
             {
                 stack.push(new Pair(x.getRow(),x.getCollumn()-1,currentValue));
+                pixels[x.getRow()][x.getCollumn()-1] = currentValue;
                 currentValue++;
             }
             
