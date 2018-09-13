@@ -1,6 +1,0 @@
-#BlueJ class context
-comment0.params=x\ y
-comment0.target=pair(int,\ int)
-comment1.params=v
-comment1.target=void\ changeValue(int)
-numComments=2
