@@ -33,9 +33,8 @@ public class Grid
         
         stack.push(start);
         
-        int o = 0;
         
-        while (o<100){
+        while (currentValue<=100){
             
             //Pops the top value off the stack
             Pair x = stack.pop();
@@ -68,7 +67,6 @@ public class Grid
                 currentValue++;
             }
             
-            o++;
         }
       
    }
