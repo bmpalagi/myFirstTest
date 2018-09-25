@@ -127,6 +127,7 @@ target5.editor.x=-8
 target5.editor.y=-8
 target5.height=50
 target5.name=bradPalagi_parentheses
+target5.naviview.expanded=false
 target5.showInterface=false
 target5.type=ClassTarget
 target5.typeParameters=
